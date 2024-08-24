@@ -62,49 +62,37 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
+**Shortcuts**
+| Acción | Shortcut |
+| -------- | -------- |
+| Cambiar de workspace específico | <kbd>Windows</kbd> + <kbd>[1\|2\|3\|4\|5\|6\|7\|8\|9\|0]</kbd> |
+| Cambiar de workspace a el siguiente o el anterior | <kbd>Windows</kbd> + <kbd>]\|[</kbd> |
+| Alternar entre los dos últimos workspaces | <kbd>Windows</kbd> + <kbd>Tab</kbd> |
+| Seleccionar ventana abierta en el workspace actual | <kbd>Windows</kbd> + <kbd>⇦⇧⇩⇨</kbd> | 
+| Mover la ventana seleccionada a otro workspace | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>[1\|2\|3\|4\|5\|6\|7\|8\|9\|0]</kbd> |
+| Abrir terminal (*Kitty*) | <kbd>Windows</kbd> + <kbd>Enter</kbd> |
+| Abrir navegador (*Firefox*) | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> |
+| Abrir navegador (*Chromium*) | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> |
+| Abrir *BurpSuite* | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> |
+| Abrir menú de aplicaciones (*Rofi*) | <kbd>Windows</kbd> + <kbd>D</kbd> |
+| Tomar screenshot (*Flameshot*) | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> |
+| Bloquear pantalla (*i3lock-color*) | <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> |
+| Abrir menú para apagar, suspender, etc. El sistema (*Rofi*) | <kbd>Windows</kbd> + <kbd>P</kbd>|
+| Cerrar ventana seleccionada | <kbd>Windows</kbd> + <kbd>W</kbd> |
+| Abrir preselección | <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd> + <kbd>⇦⇧⇩⇨</kbd> |
+| Resize de preselección | <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>[1\|2\|3\|4\|5\|6\|7\|8\|9\|0]</kbd> |
+| Cerrar preselección | <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> |
+| Cambiar la ventana seleccionada a modo *Flotante* | <kbd>Windows</kbd> + <kbd>S</kbd> |
+| Cambiar la ventana seleccionada a modo *Terminal* | <kbd>Windows</kbd> + <kbd>T</kbd> |
+| Cambiar layout de la ventana seleccionada entre *Tiled* y *Monocle* | <kbd>Windows</kbd> + <kbd>M</kbd> |
+| Resize de ventanas flotantes | <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>⇦⇧⇩⇨</kbd> |
+| Mover ventanas flotantes | <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>⇦⇧⇩⇨</kbd> |
+| Recargar configuración (*bspwm*) | <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> |
+| Cerrar sesión | <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> |
+| Recargar configuración (*sxhkd*) | <kbd>Windows</kbd> + <kbd>Esc</kbd> |
+| Subir volumen del sistema | <kbd>Fn</kbd> + <kbd>F3</kbd> |
+| Bajar volumen del sistema | <kbd>Fn</kbd> + <kbd>F2</kbd> |
+| Subir brillo del monitor | <kbd>Fn</kbd> + <kbd>F6</kbd> |
+| Bajar brillo del monitor | <kbd>Fn</kbd> + <kbd>F5</kbd> |
 
-### Instalación de Neovim
-
-#### Para Usuario No Privilegiado:
-Cada linea de comando por separado.
-
-```bash
-- Nos clonamos el NvChad como usuario no privilegiado `git clone https://github.com/NvChad/starter ~/.config/nvim`
-- `sudo su` --->Nos convertimos en root 
-- `cd` --->Para ir a la raíz
-- `mkdir /opt/nvim`
-- `cd /opt/nvim`
-- `mv /home/balthael/ParrotEntorno/neovim/nvim-linux64 .` Movemos la carpeta nvim-linux64 que esta en el repositorio del entorno que clonamos  a la ruta creada.
-- Nos cambiamos a usuario no privilegiado
-- `cd /opt/nvim/nvim-linux64/bin `
-- `./nvim` 
-- `sudo apt remove neovim`  
-- `nvim`
-
-```
-
-#### Para Usuario Root:
-
-```bash
-
-- `sudo su` ---> Para volvernos root
-- `cd /root/.config/` ---> Ir a la carpeta raíz de root
-- `cp -r /home/balthael/.config/nvim .` ---> Copiamos de forma recursiva la carpeta nvim 
-- `cd /root/.config/nvim` ---> vamos a la ruta nvim 
-- `nvim` ---> Ejecutamos nvim 
-
-```
- Para quitar el $ de nvim ver el video y agregar estas dos lineas en options.lua
-
-```bash
-local o = vim.o
-o.list =false
-```
-
-
-## Contacto
-
-Si tienes preguntas o necesitas ayuda, no dudes en escribirme a mi [LinkedIn](https://www.linkedin.com/in/johnosoriob/).
-
-Gracias
 
