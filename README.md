@@ -63,8 +63,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-Aquí tienes los comandos agrupados de manera lógica según su función:
-
 **Shortcuts**
 
 ### **Gestión de Ventanas**
